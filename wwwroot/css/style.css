@@ -14102,3 +14102,154 @@ textarea.form-control {
         stroke-dashoffset: -136px;
     }
 }
+
+
+/* Centering Caption */
+.carousel-caption {
+    bottom: 20%;
+    text-align: center;
+    z-index: 2;
+}
+
+.carousel-caption h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Fixed Height for Carousel */
+.carousel-item {
+    height: 500px;
+    background-color: black; /* Prevents white flicker */
+}
+
+    .carousel-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Ensures images fit within 300px without distortion */
+    }
+
+/* Ensure no white screen between transitions */
+.carousel-inner, .carousel-item {
+    background-color: black; /* Extra protection against flickering */
+}
+
+/* Custom Controls */
+.carousel-control-prev, .carousel-control-next {
+    width: 5%;
+}
+/* Top Header Bar */
+.top-header {
+    background-color: #cc8800; /* Matching the color from your image */
+    color: white;
+    padding: 8px 0;
+    font-size: 14px;
+}
+
+    /* Flex container */
+    .top-header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+        flex-wrap: wrap; /* Allows wrapping on small screens */
+    }
+
+/* Left section (phone & email) */
+.header-left {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+    .header-left span {
+        margin-right: 15px;
+        white-space: nowrap; /* Prevents text wrapping */
+    }
+
+    .header-left a {
+        color: white;
+        text-decoration: none;
+    }
+
+/* Right section (social icons) */
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+    .header-right a {
+        color: white;
+        margin-left: 10px;
+        font-size: 16px;
+        transition: color 0.3s;
+    }
+
+        .header-right a:hover {
+            color: #000; /* Darker color on hover */
+        }
+/* Instagram Gradient */
+.instagram-icon {
+    background: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 16px;
+}
+
+/* Gmail (Red) */
+.gmail-icon {
+    color: #D14836; /* Official Gmail Red */
+}
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    width: 60px; /* Ensuring a perfect circle */
+    height: 60px; /* Same as width */
+    border-radius: 50%;
+    font-size: 28px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s;
+}
+
+    .whatsapp-button:hover {
+        background: #1ebd58;
+    }
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    .top-header .container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+        text-align: center;
+    }
+
+    .header-left, .header-right {
+        justify-content: center;
+        width: 100%;
+        padding: 5px 0;
+    }
+
+        .header-left span {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .header-right a {
+            margin: 0 8px; /* Space out icons on mobile */
+        }
+}

@@ -12,3 +12,8 @@
 /path.kaleido.sln
 /Program.cs
 /.config
+/bin/Release/net8.0
+/Properties/PublishProfiles
+/obj/Release/net8.0/staticwebassets
+/obj/Release/net8.0/PubTmp/Out/wwwroot/scss
+/obj
